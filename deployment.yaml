@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timetable-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: timetable
+  template:
+    metadata:
+      labels:
+        app: timetable
+    spec:
+      containers:
+      - name: timetable-container
+        image: <your-dockerhub-username>/timetable-app:latest
+        ports:
+        - containerPort: 80

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Timetable</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; padding: 40px; }
+        table { border-collapse: collapse; width: 100%; max-width: 900px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 15px; text-align: center; border: 1px solid #eee; }
+        th { background-color: #4CAF50; color: white; text-transform: uppercase; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .break { background-color: #ffe0b2; font-weight: bold; color: #e65100; }
+        .lab { background-color: #e3f2fd; color: #1976d2; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Day / Time</th>
+                <th>09:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 11:30</th>
+                <th>11:30 - 12:30</th>
+                <th>12:30 - 01:30</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Monday</b></td>
+                <td>Mathematics</td>
+                <td>Physics</td>
+                <td rowspan="5" class="break">L<br>U<br>N<br>C<br>H</td>
+                <td>Data Structures</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td><b>Tuesday</b></td>
+                <td colspan="2" class="lab">Computer Lab</td>
+                <td>Operating Systems</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <td><b>Wednesday</b></td>
+                <td>Physics</td>
+                <td>Data Structures</td>
+                <td>English</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <td><b>Thursday</b></td>
+                <td>Operating Systems</td>
+                <td>Mathematics</td>
+                <td colspan="2" class="lab">Physics Lab</td>
+            </tr>
+            <tr>
+                <td><b>Friday</b></td>
+                <td>English</td>
+                <td>Data Structures</td>
+                <td>Physics</td>
+                <td>Sports</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
