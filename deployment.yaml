@@ -16,4 +16,4 @@ spec:
       - name: timetable-container
         image: https://github.com/aadhee2005/agilehtml.git/timetable-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 85
