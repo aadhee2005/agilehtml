@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: timetable-container
-        image: <your-dockerhub-username>/timetable-app:latest
+        image: https://github.com/aadhee2005/agilehtml.git/timetable-app:latest
         ports:
         - containerPort: 80
