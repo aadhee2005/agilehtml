@@ -8,5 +8,5 @@ spec:
     app: timetable
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 85
       nodePort: 30008  # Specify a port between 30000-32767
